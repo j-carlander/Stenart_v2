@@ -1,0 +1,15 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+.page-subtitle {
+  font-size: 0.8em !important;
+  font-weight: 400;
+}
