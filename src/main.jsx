@@ -4,8 +4,12 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { LandingPage } from "./pages/LandingPage/LandingPage.jsx";
+import { About } from "./pages/About/About.jsx";
 
-export const pages = [{ path: "/", element: <LandingPage /> }];
+export const pages = [
+  { path: "/", element: <LandingPage /> },
+  { path: "/om-mig", element: <About /> },
+];
 
 const router = createBrowserRouter([
   {
