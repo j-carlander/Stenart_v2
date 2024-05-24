@@ -1,0 +1,34 @@
+.page-nav-wrapper {
+  position: relative;
+  margin-right: 1em;
+}
+
+.page-nav-toggle {
+  background: none;
+  border: 0.5px solid transparent;
+  cursor: pointer;
+  padding: 1em;
+  z-index: 2;
+}
+
+.page-nav-toggle:hover,
+.page-nav-toggle.open {
+  border-color: #bbbbbb;
+  border-radius: 0.3em;
+}
+.page-nav-toggle:hover:not(.open) {
+  box-shadow: 0 1px 3px #c5c5c5;
+}
+
+.page-nav-toggle.open {
+  border-bottom: none;
+}
+.page-nav {
+  position: absolute;
+  right: 0;
+  width: max-content;
+  padding: 2em;
+  box-shadow: -3px 3px 5px #c5c5c5;
+  z-index: 2;
+  border-radius: 0.2em;
+}

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Nav } from "../Nav/Nav";
 import "./Header.css";
 
 export function Header() {
@@ -7,9 +7,7 @@ export function Header() {
       <h1 className="page-title">
         Stenart <span className="page-subtitle">S.C.Flummer</span>
       </h1>
-      <nav>
-        <NavLink to="/om-mig">Om mig</NavLink>
-      </nav>
+      <Nav />
     </header>
   );
 }
