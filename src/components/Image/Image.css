@@ -1,10 +1,10 @@
 .main-gallery-img {
-  flex: 0 1 400px;
-  min-width: 250px;
-  height: fit-content;
+  width: 400px;
+  height: 600px;
 }
 
 .main-gallery-img > img {
   width: 100%;
   aspect-ratio: auto;
+  object-fit: contain;
 }

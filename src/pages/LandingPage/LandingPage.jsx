@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./LandingPage.css";
-import { Image } from "../../components/Image/Image";
+
+import { Gallery } from "../../components/Gallery/Gallery";
 
 export function LandingPage() {
   const [images, setImages] = useState([]);
@@ -14,10 +15,8 @@ export function LandingPage() {
   }, []);
 
   return (
-    <article className="main-gallery-wrapper">
-      {images.map((image) => (
-        <Image key={image.id} image={image} />
-      ))}
-    </article>
+    <>
+      <Gallery images={images} />
+    </>
   );
 }
