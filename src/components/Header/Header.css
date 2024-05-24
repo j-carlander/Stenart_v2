@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.title-wrapper {
+  cursor: pointer;
 }
 
 .page-title {
@@ -10,6 +17,6 @@
 }
 
 .page-subtitle {
-  font-size: 0.8em !important;
+  font-size: 1.8rem;
   font-weight: 400;
 }

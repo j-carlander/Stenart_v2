@@ -1,12 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { Nav } from "../Nav/Nav";
 import "./Header.css";
 
 export function Header() {
+  const navigate = useNavigate();
   return (
     <header className="page-header">
-      <h1 className="page-title">
-        Stenart <span className="page-subtitle">S.C.Flummer</span>
-      </h1>
+      <div className="title-wrapper" onClick={() => navigate("/")}>
+        <h1 className="page-title">Stenart</h1>
+        <span className="page-subtitle">S.C.Flummer</span>
+      </div>
       <Nav />
     </header>
   );
