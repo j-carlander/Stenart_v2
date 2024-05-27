@@ -9,7 +9,6 @@ export function Gallery() {
     (async function () {
       const res = await fetch("/api/gallery");
       const json = await res.json();
-      console.log("img json: ", json);
       setImages(json);
     })();
   }, []);
