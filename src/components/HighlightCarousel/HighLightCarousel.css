@@ -6,6 +6,7 @@
   margin-inline: auto;
 
   position: relative;
+  isolation: isolate;
 }
 
 .slides {
