@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import "./LandingPage.css";
-
-// import { Gallery } from "../../components/Gallery/Gallery";
 import { HighLightCarousel } from "../../components/HighlightCarousel/HighLightCarousel";
 
 export function LandingPage() {
@@ -18,7 +16,6 @@ export function LandingPage() {
   return (
     <>
       <HighLightCarousel highlights={highlights.length > 0 ? highlights : []} />
-      {/* <Gallery highlights={images} /> */}
     </>
   );
 }

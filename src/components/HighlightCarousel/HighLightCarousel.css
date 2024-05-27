@@ -1,5 +1,5 @@
 .highlights-carousel {
-  width: 100vw;
+  width: calc(100vw - 2rem);
   height: calc(100vh - 154px);
   height: calc(100dvh - 154px);
   max-width: 1280px;
