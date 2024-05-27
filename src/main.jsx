@@ -5,10 +5,12 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { LandingPage } from "./pages/LandingPage/LandingPage.jsx";
 import { About } from "./pages/About/About.jsx";
+import { Gallery } from "./components/Gallery/Gallery.jsx";
 
 export const pages = [
   { path: "/", element: <LandingPage /> },
   { path: "/om-mig", element: <About /> },
+  { path: "/galleri", element: <Gallery /> },
 ];
 
 const router = createBrowserRouter([

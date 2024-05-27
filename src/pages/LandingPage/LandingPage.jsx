@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react";
 import "./LandingPage.css";
 
-import { Gallery } from "../../components/Gallery/Gallery";
+// import { Gallery } from "../../components/Gallery/Gallery";
+import { HighLightCarousel } from "../../components/HighlightCarousel/HighLightCarousel";
 
 export function LandingPage() {
-  const [images, setImages] = useState([]);
+  const [highlights, setHighlights] = useState([]);
 
   useEffect(() => {
     (async function () {
-      const res = await fetch("/api/gallery");
+      const res = await fetch("/api/highlights");
       const json = await res.json();
-      setImages(json);
+      setHighlights(json);
     })();
   }, []);
 
   return (
     <>
-      <Gallery images={images} />
+      <HighLightCarousel highlights={highlights.length > 0 ? highlights : []} />
+      {/* <Gallery highlights={images} /> */}
     </>
   );
 }
