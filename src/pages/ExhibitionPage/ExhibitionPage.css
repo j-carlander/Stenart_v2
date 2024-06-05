@@ -1,0 +1,27 @@
+.img-container {
+  display: none;
+}
+
+.exhibitions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .exhibition-page-wrapper {
+    display: flex;
+    gap: 5vw;
+  }
+
+  .img-container {
+    display: block;
+    width: 50vw;
+    max-width: 500px;
+  }
+
+  .img-container > img {
+    width: 100%;
+  }
+}

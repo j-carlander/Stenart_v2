@@ -1,0 +1,16 @@
+.exhibit-form {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.exhibit-form-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.exhibit-form-label:has(textarea) {
+  flex-direction: column;
+}
