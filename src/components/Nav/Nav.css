@@ -66,6 +66,7 @@
   .open-navbar-btn,
   .close-navbar-btn {
     display: block;
+    padding: 0.55em;
   }
 
   #navbar-active:checked ~ .navlinks-container {
