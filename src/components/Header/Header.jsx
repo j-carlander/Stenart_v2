@@ -5,14 +5,13 @@ import "./Header.css";
 export function Header() {
   const navigate = useNavigate();
   return (
-    <div className="header-wrapper">
-      <header className="page-header">
-        <div className="title-wrapper" onClick={() => navigate("/")}>
-          <h1 className="page-title">Stenart</h1>
-          <span className="page-subtitle">S.C.Flummer</span>
-        </div>
+    <header className="page-header">
+      <div className="header-wrapper">
+        <h1 className="page-title" onClick={() => navigate("/")}>
+          Stenart <span className="page-subtitle">S.C.Flummer</span>
+        </h1>
         <Nav />
-      </header>
-    </div>
+      </div>
+    </header>
   );
 }
