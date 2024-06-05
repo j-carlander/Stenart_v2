@@ -1,0 +1,54 @@
+.admin-img-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.admin-img-form > h3 {
+  text-align: center;
+  padding: 1em;
+}
+
+.img-form-label > input[type="text"] {
+  font-size: inherit;
+  padding: 0.5em;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.img-file-select {
+  cursor: pointer;
+  padding: 0.75em 1em;
+  border-radius: 0.3em;
+  border: 1px solid black;
+}
+
+.img-file-select:hover {
+  background-color: lightblue;
+}
+
+.img-preview-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-preview-controls > button {
+  display: flex;
+  align-items: center;
+  padding: 0.2em 0.5em;
+  border-radius: 0.3em;
+  border: 1px solid;
+}
+
+.img-preview-controls > button:hover {
+  color: red;
+}
+.img-preview-controls > button:hover > svg {
+  fill: red;
+}
+.preview-img {
+  max-width: 400px;
+}
