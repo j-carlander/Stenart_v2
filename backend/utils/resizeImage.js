@@ -9,9 +9,8 @@ const destinationFolder = join(__dirname, "..", "..", "public/images");
 const settings = {
   quality: 70,
   sizes: [
-    { width: 32, height: 32 },
+    { width: 30, height: 45 },
     { width: 400, height: 600 },
-    { width: 1400, height: 700 },
   ],
 };
 

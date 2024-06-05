@@ -2,7 +2,7 @@ import { runQuery } from "../db.js";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import fs from "fs";
-import { resizeImage } from "../utils/imageHandler.js";
+import { resizeImage } from "../utils/resizeImage.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
