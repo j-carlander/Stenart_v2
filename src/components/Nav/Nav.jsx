@@ -31,7 +31,7 @@ export function Nav() {
           Hem
         </NavLink>
         <NavLink to="/om-mig">Om</NavLink>
-        <NavLink to="/">Utställningar</NavLink>
+        <NavLink to="/utstallningar">Utställningar</NavLink>
         <NavLink to="/galleri">Galleri</NavLink>
       </div>
     </nav>

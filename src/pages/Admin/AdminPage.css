@@ -1,0 +1,24 @@
+.admin-page-header {
+  text-align: center;
+  padding: 1em;
+}
+
+.admin-page-wrapper {
+  display: flex;
+}
+.admin-page-nav {
+  min-width: fit-content;
+  padding: 1em;
+}
+
+.admin-page-nav > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style: none;
+}
+.admin-page-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
