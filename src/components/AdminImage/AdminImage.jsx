@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./AdminImage.css";
 import fetchService from "../../services/fetchService";
+import { Navigate, useOutletContext } from "react-router-dom";
 
 export function AdminImage() {
-  const [image, setImage] = useState({
-    alt: "",
-    highlight: false,
-    base64Img: null,
-  });
+  const [image, setImage] = useState(defaultImgObject);
+
+  const [token] = useOutletContext();
+
   function handleFiles(e) {
     const file = e.target.files[0];
     if (!file) return;
@@ -22,11 +22,13 @@ export function AdminImage() {
   }
   async function uploadImage(e) {
     e.preventDefault();
-
+    console.log(image);
     const response = await fetchService.postImage(image);
 
-    console.log("response: ", await response.json());
+    if (response.status === 201) setImage(defaultImgObject);
   }
+
+  if (!token) return <Navigate to={"/admin/login"} />;
 
   return (
     <form className="admin-img-form" onSubmit={(e) => e.preventDefault()}>
@@ -92,7 +94,15 @@ export function AdminImage() {
         <p>Ingen bild är vald!</p>
       )}
 
-      <button onClick={uploadImage}>Ladda upp bild</button>
+      <button className="upload-button" onClick={uploadImage}>
+        Ladda upp bild
+      </button>
     </form>
   );
 }
+
+const defaultImgObject = {
+  alt: "",
+  highlight: false,
+  base64Img: null,
+};

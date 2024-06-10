@@ -52,3 +52,7 @@
 .preview-img {
   max-width: 400px;
 }
+
+.upload-button {
+  padding-block: 0.5em;
+}
