@@ -28,7 +28,7 @@ export function HighLightCarousel({ highlights }) {
             className="slide"
             key={highlight.id}
             data-active={imgIndex === index}>
-            <img src={`/images/${highlight.id}.png`} alt="" />
+            <img src={`/images/${highlight.id}_w400.webp`} alt="" />
           </li>
         ))}
       </ul>
