@@ -15,6 +15,14 @@
   padding: 2rem;
   max-width: 1280px;
   margin-inline: auto;
+
+  transition: all 200ms;
+}
+
+.compact {
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 1rem;
 }
 
 .page-title {
