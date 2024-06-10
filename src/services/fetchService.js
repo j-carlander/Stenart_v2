@@ -35,7 +35,13 @@ async function postExhibit(exhibit) {
 }
 
 async function postImage(image) {
-  return await fetch("/admin/image", "POST", image);
+  const response = await fetchHelper("/admin/image", "POST", image);
+  return response;
+}
+
+async function login(credentials) {
+  const response = await fetchHelper("/admin/login", "POST", credentials);
+  return await response.json();
 }
 
 /* Export services */
@@ -43,6 +49,7 @@ const fetchService = {
   postExhibit,
   getExhibitions,
   postImage,
+  login,
 };
 
 export default fetchService;

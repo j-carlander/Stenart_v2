@@ -10,6 +10,7 @@ import { AdminImage } from "./components/AdminImage/AdminImage.jsx";
 import { AdminPage } from "./pages/Admin/AdminPage.jsx";
 import { AdminExhibitions } from "./components/AdminExhibitions/AdminExhibitions.jsx";
 import { ExhibitionPage } from "./pages/ExhibitionPage/ExhibitionPage.jsx";
+import { Login } from "./components/Login/Login.jsx";
 
 export const pages = [
   { path: "/", element: <LandingPage /> },
@@ -20,6 +21,7 @@ export const pages = [
 
 export const adminPages = [
   { path: "/admin", element: <AdminImage /> },
+  { path: "/admin/login", element: <Login /> },
   { path: "/admin/utstallningar", element: <AdminExhibitions /> },
 ];
 

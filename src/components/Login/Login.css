@@ -1,0 +1,22 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: stretch;
+}
+
+.login-form > label {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+#email,
+#password {
+  width: 30ch;
+  padding: 0.3em;
+}
+
+.login-form > button {
+  padding-block: 0.5em;
+}
