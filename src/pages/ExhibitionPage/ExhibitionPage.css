@@ -1,3 +1,7 @@
+.exhibition-page-wrapper {
+  width: fit-content;
+  margin-inline: auto;
+}
 .img-container {
   display: none;
 }
@@ -18,7 +22,7 @@
   .img-container {
     display: block;
     width: 50vw;
-    max-width: 500px;
+    max-width: calc((100vh - 200px) * (2 / 3));
   }
 
   .img-container > img {
