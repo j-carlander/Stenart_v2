@@ -1,14 +1,21 @@
 .admin-page-header {
   text-align: center;
   padding: 1em;
+  border-bottom: 0.5px solid lightgrey;
 }
 
 .admin-page-wrapper {
-  display: flex;
+  /* display: flex; */
+  position: relative;
 }
+
 .admin-page-nav {
+  position: absolute;
+  top: 0;
   min-width: fit-content;
+  height: 100%;
   padding: 1em;
+  border-right: 1px solid lightgrey;
 }
 
 .admin-page-nav > ul {
@@ -17,8 +24,14 @@
   gap: 1em;
   list-style: none;
 }
+
+.admin-page-sign-out {
+  padding: 0.5em 0.75em;
+}
+
 .admin-page-main {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-top: 1em;
 }
