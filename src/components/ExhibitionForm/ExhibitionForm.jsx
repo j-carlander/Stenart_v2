@@ -14,8 +14,13 @@ export function ExhibitionForm({ dialogRef, exhibition = defaultExhibit }) {
     console.log("Utställning: ", exhibit);
     await postExhibit();
     setTimeout(() => {
-      dialogRef.current.close();
+      closeDialog();
     }, 2000);
+  }
+
+  function closeDialog() {
+    dialogRef.current.close();
+    setExhibit(defaultExhibit);
   }
 
   async function postExhibit() {
@@ -26,6 +31,19 @@ export function ExhibitionForm({ dialogRef, exhibition = defaultExhibit }) {
 
   return (
     <form onSubmit={handleSubmit} className="exhibit-form" method="modal">
+      <button
+        className="exhibit-form-close-btn"
+        type="reset"
+        onClick={closeDialog}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#5f6368">
+          <path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+        </svg>
+      </button>
       <label htmlFor="title" className="exhibit-form-label">
         Utställning*:{" "}
         <input
@@ -85,8 +103,11 @@ export function ExhibitionForm({ dialogRef, exhibition = defaultExhibit }) {
           onChange={handleChange}
         />
       </label>
-      <button>Spara</button>
-      <button type="reset" onClick={() => dialogRef.current.close()}>
+      <button className="exhibit-form-button save-button">Spara</button>
+      <button
+        className="exhibit-form-button reset-btn"
+        type="reset"
+        onClick={closeDialog}>
         Avbryt
       </button>
     </form>

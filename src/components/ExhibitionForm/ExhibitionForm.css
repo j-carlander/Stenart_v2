@@ -1,8 +1,18 @@
 .exhibit-form {
-  margin-top: 2em;
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.exhibit-form-close-btn {
+  align-self: end;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.exhibit-form-close-btn:hover > svg {
+  fill: red;
 }
 
 .exhibit-form-label {
@@ -13,4 +23,25 @@
 
 .exhibit-form-label:has(textarea) {
   flex-direction: column;
+}
+
+.exhibit-form-button {
+  padding: 0.3em;
+  border-radius: 0.3em;
+  border: 1px solid transparent;
+  background: none;
+}
+
+.exhibit-form-button:hover {
+  border: 1px solid grey;
+  font-weight: 600;
+}
+
+.save-button {
+  background-color: rgb(64, 216, 84);
+}
+
+.reset-btn:hover {
+  color: red;
+  border-color: red;
 }

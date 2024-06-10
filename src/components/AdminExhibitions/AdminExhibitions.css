@@ -1,0 +1,45 @@
+.admin-exhibition-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  min-width: 500px;
+}
+
+.admin-exhibition-new-btn {
+  align-self: end;
+  padding: 0.3em 0.5em;
+}
+
+.exhibition-form-modal {
+  margin: auto;
+  padding: 2rem;
+}
+
+.admin-exhibit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0.5em;
+  border: 0.5px solid black;
+  border-radius: 0.5em;
+}
+
+.admin-exhibit-card-buttons {
+  align-self: end;
+}
+
+.admin-exhibit-edit,
+.admin-exhibit-delete {
+  margin-left: 0.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-exhibit-edit > svg {
+  fill: black;
+}
+
+.admin-exhibit-delete > svg {
+  fill: red;
+}

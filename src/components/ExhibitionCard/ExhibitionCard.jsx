@@ -1,6 +1,6 @@
 export function ExhibitionCard({ exhibition }) {
   return (
-    <section>
+    <article>
       <h3>{exhibition.title}</h3>
       <p>{exhibition.location}</p>
       <p>
@@ -19,6 +19,6 @@ export function ExhibitionCard({ exhibition }) {
       <a href={exhibition.link} target="_blank" className="link-btn">
         Läs mer
       </a>
-    </section>
+    </article>
   );
 }
