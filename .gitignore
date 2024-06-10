@@ -24,3 +24,4 @@ public/images
 *.sln
 *.sw?
 .env
+backend/config/keys
