@@ -1,9 +1,9 @@
 function getToken() {
-  return sessionStorage.getItem("token");
+  return sessionStorage.getItem("TOKEN");
 }
 
 function setToken(token) {
-  sessionStorage.setItem("token", token);
+  sessionStorage.setItem("TOKEN", token);
 }
 
 function clearSession() {
