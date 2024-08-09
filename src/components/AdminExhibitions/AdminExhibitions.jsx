@@ -35,11 +35,13 @@ export function AdminExhibitions() {
       <button
         className="admin-exhibition-new-btn"
         onClick={() => dialogRef.current.showModal()}>
-        Ny
+        Ny Utställning
       </button>
-      <dialog ref={dialogRef} className="exhibition-form-modal">
-        <ExhibitionForm dialogRef={dialogRef} exhibition={editExhibit} />
-      </dialog>
+      <ExhibitionForm
+        dialogRef={dialogRef}
+        exhibit={editExhibit}
+        setExhibit={setEditExhibit}
+      />
       {exhibitions.map((exhibit) => (
         <div key={exhibit.id} className="admin-exhibit-card">
           <div className="admin-exhibit-card-buttons">
