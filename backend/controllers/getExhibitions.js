@@ -7,7 +7,17 @@ export async function getExhibitions(req, res) {
   todate,
   link ,
   description FROM exhibitions;`;
-  const result = await runQuery(sql);
-  console.log("Exhibition result: ", result);
+  let result = await runQuery(sql);
+  if (result[0].fromdate)
+    result = result.map((exhibit) => ({
+      ...exhibit,
+      fromdate: Intl.DateTimeFormat("sv-SE", { dateStyle: "short" }).format(
+        new Date(exhibit.fromdate)
+      ),
+      todate: Intl.DateTimeFormat("sv-SE", { dateStyle: "short" }).format(
+        new Date(exhibit.todate)
+      ),
+    }));
+
   res.send(result);
 }
