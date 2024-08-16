@@ -1,12 +1,14 @@
 import { runQuery } from "../db.js";
 
 export async function getExhibitions(req, res) {
-  const sql = `SELECT title,
+  const sql = `SELECT id,
+  title,
   location,
   fromdate ,
   todate,
   link ,
-  description FROM exhibitions;`;
+  description FROM exhibitions
+  order by todate desc;`;
   let result = await runQuery(sql);
   if (result[0].fromdate)
     result = result.map((exhibit) => ({

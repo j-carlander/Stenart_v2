@@ -20,7 +20,7 @@ export function AdminExhibitions() {
         setExhibitions(result);
       }
     })();
-  }, []);
+  }, [token]);
 
   function handleEdit(exhibit) {
     setEditExhibit(exhibit);
