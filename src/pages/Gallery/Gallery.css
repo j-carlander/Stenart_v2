@@ -1,6 +1,10 @@
 .main-gallery-heading {
   text-align: center;
   margin-block: 2em 3em;
+
+  @media screen and (max-width: 700px) {
+    margin-block: 1em;
+  }
 }
 .main-gallery-wrapper {
   display: flex;
