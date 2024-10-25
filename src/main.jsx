@@ -5,7 +5,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { LandingPage } from "./pages/LandingPage/LandingPage.jsx";
 import { About } from "./pages/About/About.jsx";
-import { Gallery } from "./components/Gallery/Gallery.jsx";
+import { Gallery } from "./pages/Gallery/Gallery.jsx";
 import { AdminImage } from "./components/AdminImage/AdminImage.jsx";
 import { AdminPage } from "./pages/Admin/AdminPage.jsx";
 import { AdminExhibitions } from "./components/AdminExhibitions/AdminExhibitions.jsx";

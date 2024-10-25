@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Image } from "../Image/Image";
+import { Image } from "../../components/Image/Image";
 import "./Gallery.css";
 
 export function Gallery() {
