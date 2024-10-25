@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+:root {
+  --exhibition-list-width: 300px;
+}
+
 html {
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;

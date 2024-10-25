@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: var(--exhibition-list-width);
 }
 
 @media screen and (min-width: 700px) {

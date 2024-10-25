@@ -1,6 +1,6 @@
 export function ExhibitionCard({ exhibition }) {
   return (
-    <article>
+    <article className="exhibition-card">
       <h3>{exhibition.title}</h3>
       <p>{exhibition.location}</p>
       <p>
