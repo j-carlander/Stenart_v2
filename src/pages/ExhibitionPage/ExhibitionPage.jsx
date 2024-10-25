@@ -13,7 +13,7 @@ export function ExhibitionPage() {
     })();
   }, []);
   return (
-    <div className="exhibition-page-wrapper">
+    <div className="page-wrapper">
       <div className="img-container">
         <img src="/images/1_w400.webp" alt="" />
       </div>

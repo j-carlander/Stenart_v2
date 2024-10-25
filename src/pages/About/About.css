@@ -1,4 +1,13 @@
-.about-page-wrapper {
+.about-page {
+  display: grid;
+  gap: 1em;
   margin: 2em auto;
-  width: fit-content;
+  max-width: 40ch;
+}
+
+.about-img {
+  display: grid;
+  place-content: center;
+  min-width: 300px;
+  padding: 2em;
 }

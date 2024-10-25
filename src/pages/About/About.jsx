@@ -2,31 +2,37 @@ import "./About.css";
 
 export function About() {
   return (
-    <article className="about-page-wrapper">
-      <h2>Om mig</h2>
-      <img src="/images/me.png" alt="" />
-      <p>
-        Jag har hela livet jobbat med skapande på något sätt. Jag utbildade mig
-        till guldsmed och har tillsammans med min fru Karin arbetat i fyrtio år
-        i vår egen guldsmedsateljé i Norrtälje.
-      </p>
-      <p>
-        Numera är det stora stenar som får ge uttryck för mina kreativa idéer.
-        Jag har skulpterat i sten sedan 2017. För mig är det en rogivande
-        skaparprocess som långsamt tar form. Det är för det mesta stenen som
-        avgör vad resultatet ska bli, den inspirerar till något. Former som
-        uppstår under arbetets gång kan ändra på allt. Den färdiga skulpturen är
-        många gånger inte lik ursprungstanken.
-      </p>
-      <p>
-        Jag måste känna glädjen i arbetet och friheten att göra precis vad som
-        just i stunden faller mig in. Det kan bli flera skulpturer av samma idé,
-        men av olika stenar, det ena föder det andra.
-      </p>
-      <p>
-        Kreativiteten i mitt huvud står nog aldrig still, jag ser former och
-        linjer överallt. Det är det som är min drivkraft!
-      </p>
-    </article>
+    <div className="page-wrapper">
+      <article className="about-page">
+        <h2>Om mig</h2>
+        <p>
+          Jag har i hela mitt liv jobbat med skapande på något sätt. Jag
+          utbildade mig till guldsmed och har arbetat över fyrtio år i egen
+          guldsmedsateljé i Norrtälje. Numera är det stora stenar som får ge
+          uttryck för mina kreativa idéer.
+        </p>
+        <p>
+          Jag har skulpterat i sten sedan 2017. För mig är det en rogivande
+          skaparprocess som långsamt tar form. Det är för det mesta stenen som
+          avgör vad resultatet ska bli, den inspirerar till något. Former som
+          uppstår under arbetets gång kan ändra på allt. Den färdiga skulpturen
+          är många gånger inte lik den ursprungliga tanken.
+        </p>
+        <p>
+          Jag måste känna glädjen i arbetet och friheten att göra precis vad som
+          faller mig in. Det kan bli flera skulpturer av samma idé, det ena
+          föder det andra. Det är också utfordringen och viljan till att kunna
+          utföra det jag vill göra rent tekniskt som lockar.
+        </p>
+        <p>
+          Kreativiteten i mitt huvud står nog aldrig still, jag ser former och
+          linjer överallt och idéer föds.
+        </p>
+        <p>Det är det som är min drivkraft!</p>
+      </article>
+      <div className="about-img">
+        <img src="/images/me.png" alt="" />
+      </div>
+    </div>
   );
 }
